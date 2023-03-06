@@ -41,8 +41,22 @@
    <article>
     <h2>Contacto</h2>
         <form action="" method="">
+            <label for="Seleccione">Seleccione</label>
+            <select id="Selection" name="Selection">
+              <option value="Empresa">Empresa</option>
+              <option value="Particular">Particular</option>
+            </select>
+            <label> Nombre </label>
+            <input type="text" placeholder="Ingrese su nombre" id="Name" name="Name" required>
             <label> Email </label>
-            <input type="email" placeholder="Ingrese su Email" id="Email" name="Email">
+            <input type="email" placeholder="Ingrese su Email" id="Email" name="Email" required>
+            <label> Telefono </label>
+            <input type="tel" placeholder="Ingrese su número" id="Tel" name="Tel" required>
+            <label>Ingrese el motivo de la consulta</label>
+            <textarea id="Motivo" name="Motivo" rows="4" cols="50" required></textarea>
+            <label></label>
+            <input type="reset">
+            <input type="submit" value="Enviar">
         </form>
    </article>
 </body>

@@ -11,6 +11,10 @@ body {
     background-color:#f0f1fa;
   }
 
+  label {
+    display: block;
+    margin-top: 15px;
+  }
 
   #oculto, #ocultob, #ocultoc {
     display: none;
