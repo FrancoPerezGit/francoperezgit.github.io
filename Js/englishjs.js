@@ -729,6 +729,8 @@ function checkAnswers() {
         document.getElementById("score").innerHTML = score;
         document.getElementById("message").innerHTML = message;
         break;
+      } else {
+        document.getElementById("message").innerHTML = "Respuesta incorrecta"
       }
     }
   }
