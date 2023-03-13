@@ -367,7 +367,7 @@ var items = [
     "Do we need to submit the report today?",
     "Do I have enough time to finish this task?",
     "Does he always wear a suit to work?",
-    "Do your friends like to go out for drinks on weekends?",
+    "Do you like to go out for drinks on weekends?",
     "Do they have any plans for the summer?",
     "Do you need any help with the project?",
     "Does she listen to music while working?",
@@ -377,8 +377,8 @@ var items = [
     "Does he have a favorite TV show?",
     "Do they go on vacation every year?",
     "Do I need to bring my own laptop to the meeting?",
-    "Do your parents live in the same city as you?",
-    "Do they have a dog or a cat?",
+    "Do they live in the same city as you?",
+    "Do they have a dog?",
     "Do you want to watch a movie tonight?",
     "Does she speak any other languages besides English?",
     "Do they like to cook their own meals?",
@@ -728,9 +728,11 @@ function checkAnswers() {
         document.getElementById("question").innerHTML = item;
         document.getElementById("score").innerHTML = score;
         document.getElementById("message").innerHTML = message;
+        document.getElementById("text").value = "";
         break;
       } else {
         document.getElementById("message").innerHTML = "Respuesta incorrecta"
+        document.getElementById("text").value = "";
       }
     }
   }
